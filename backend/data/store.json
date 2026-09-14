@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin Owner",
+      "email": "owner@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO", 
+      "role": "owner",
+      "phone": "555-0100"
+    },
+    {
+      "id": "u2",
+      "name": "Mike Trainer",
+      "email": "mentor@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "mentor",
+      "phone": "555-0101"
+    },
+    {
+      "id": "u3",
+      "name": "Active Member",
+      "email": "member@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "member",
+      "phone": "555-0102"
+    },
+    {
+      "id": "u4",
+      "name": "Expired Member",
+      "email": "expired@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "member",
+      "phone": "555-0103"
+    },
+    {
+      "id": "u6",
+      "name": "Coach Sarah",
+      "email": "sarah@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "mentor",
+      "phone": "555-0106"
+    },
+    {
+      "id": "u7",
+      "name": "Dr. David",
+      "email": "david@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "mentor",
+      "phone": "555-0107"
+    },
+    {
+      "id": "u8",
+      "name": "Alex Vance",
+      "email": "alex@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "mentor",
+      "phone": "555-0108"
+    },
+    {
+      "id": "u9",
+      "name": "Elena Rostova",
+      "email": "elena@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "mentor",
+      "phone": "555-0109"
+    },
+    {
+      "id": "u10",
+      "name": "Marcus Thorne",
+      "email": "marcus@demo.com",
+      "password_hash": "$2b$10$kjKcB8IYLSayJxzNVSgr2ODbjbOEWO3bbrS/eQ1cKUa3WwPU3trGO",
+      "role": "mentor",
+      "phone": "555-0110"
+    }
+  ],
+  "members": [
+    {
+      "id": "m1",
+      "user_id": "u3",
+      "mentor_id": "u2",
+      "join_date": "2024-01-01T00:00:00.000Z",
+      "plan_type": "Pro",
+      "membership_end_date": "2030-01-01T00:00:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "m2",
+      "user_id": "u4",
+      "mentor_id": "u2",
+      "join_date": "2023-01-01T00:00:00.000Z",
+      "plan_type": "Basic",
+      "membership_end_date": "2023-12-31T00:00:00.000Z",
+      "status": "expired"
+    }
+  ],
+  "mentors": [
+    {
+      "id": "mt1",
+      "user_id": "u2",
+      "specialty": "Weightlifting",
+      "bio": "Experienced weightlifting coach with 10 years of experience."
+    },
+    {
+      "id": "mt2",
+      "user_id": "u6",
+      "specialty": "Hypertrophy & Mobility",
+      "bio": "Expert in muscle isolation and joint longevity. Dedicated to injury prevention."
+    },
+    {
+      "id": "mt3",
+      "user_id": "u7",
+      "specialty": "Endurance & Biomechanics",
+      "bio": "Triathlete and biomechanics researcher. Focuses on gait analysis and VO2 max training."
+    },
+    {
+      "id": "mt4",
+      "user_id": "u8",
+      "specialty": "Calisthenics & Movement",
+      "bio": "Master of bodyweight mechanics. Helps members achieve complete control over their physical form."
+    },
+    {
+      "id": "mt5",
+      "user_id": "u9",
+      "specialty": "Olympic Weightlifting",
+      "bio": "Former national competitor specializing in the snatch and clean & jerk. Demands technical perfection."
+    },
+    {
+      "id": "mt6",
+      "user_id": "u10",
+      "specialty": "Rehabilitation & Recovery",
+      "bio": "Clinical specialist in sports injury rehabilitation. Ensures you stay healthy while pushing limits."
+    }
+  ],
+  "diet_plans": [
+    {
+      "id": "d1",
+      "member_id": "m1",
+      "meals": [
+        {"name": "Breakfast", "items": "Oats, 4 Eggs, Banana", "calories": 500},
+        {"name": "Lunch", "items": "Chicken Breast, Rice, Broccoli", "calories": 700},
+        {"name": "Dinner", "items": "Salmon, Quinoa, Asparagus", "calories": 600}
+      ],
+      "calories": 1800,
+      "notes": "Drink 3L water",
+      "updated_at": "2024-01-02T00:00:00.000Z"
+    }
+  ],
+  "workout_routines": [
+    {
+      "id": "w1",
+      "member_id": "m1",
+      "day": "Monday",
+      "exercises": [
+        {"name": "Bench Press", "sets": 4, "reps": 10},
+        {"name": "Incline Dumbbell Press", "sets": 3, "reps": 12},
+        {"name": "Tricep Pushdown", "sets": 3, "reps": 15}
+      ],
+      "notes": "Rest 90s between sets",
+      "updated_at": "2024-01-02T00:00:00.000Z"
+    }
+  ],
+  "gym_info": {
+    "id": "g1",
+    "name": "FitTrack Gym",
+    "address": "123 Muscle Ave, Fitness City",
+    "timings": "Mon-Sun 5:00 AM - 11:00 PM",
+    "contact": "contact@fittrack.demo",
+    "amenities": ["Free Weights", "Cardio Area", "Sauna", "Showers", "Personal Training"]
+  }
+}

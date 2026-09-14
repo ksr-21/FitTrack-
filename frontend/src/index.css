@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #111013;
+  --color-panel: #1B191C;
+  --color-bone: #F3EEE6;
+  --color-muted: #C9C3B7;
+  --color-brass: #B4915A;
+  --color-hairline: rgba(243, 238, 230, 0.12);
+  
+  /* Redefine primary for standard utility usage if needed */
+  --color-primary-500: #B4915A;
+  --color-primary-600: #A3824F;
+  --color-dark-900: #111013;
+  --color-dark-800: #1B191C;
+}
+
+@layer base {
+  body {
+    @apply bg-ink text-bone font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .border-hairline {
+    border-color: var(--color-hairline);
+  }
+  .bg-panel {
+    background-color: var(--color-panel);
+  }
+  .text-brass {
+    color: var(--color-brass);
+  }
+  .bg-brass {
+    background-color: var(--color-brass);
+  }
+}
