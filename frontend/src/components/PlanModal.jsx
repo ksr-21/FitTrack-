@@ -29,6 +29,13 @@ const PlanModal = ({ isOpen, onClose, member }) => {
     }
   }, [isOpen, member]);
 
+  const [workoutText, setWorkoutText] = useState('');
+  useEffect(() => {
+    if (workoutPlan) {
+      setWorkoutText(JSON.stringify(workoutPlan, null, 2));
+    }
+  }, [workoutPlan]);
+
   if (!isOpen) return null;
 
   const handleDietChange = (e) => {
@@ -43,15 +50,10 @@ const PlanModal = ({ isOpen, onClose, member }) => {
       // But for simplicity, we'll store it as parsed if it's valid, else we'll keep the text state somewhere.
       // Actually, standardizing on text editing for workouts since it's an array of complex objects.
       setWorkoutText(value);
-    } catch(err) {}
-  };
-
-  const [workoutText, setWorkoutText] = useState('');
-  useEffect(() => {
-    if (workoutPlan) {
-      setWorkoutText(JSON.stringify(workoutPlan, null, 2));
+    } catch(err) {
+      console.error(err);
     }
-  }, [workoutPlan]);
+  };
 
   const handleSave = async () => {
     setSaving(true);

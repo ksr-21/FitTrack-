@@ -16,9 +16,11 @@ const store = {
     { id: 'm2', user_id: 'u4', mentor_id: 'mt1', join_date: '2025-06-01', plan_type: 'Basic', membership_end_date: '2026-06-01', status: 'expired' },
     { id: 'm3', user_id: 'u5', mentor_id: null, join_date: '2026-09-01', plan_type: 'Pro', membership_end_date: '2027-09-01', status: 'active' },
   ],
+  mentors: [
     { id: 'mt1', user_id: 'u2', specialty: 'Strength & Conditioning', bio: 'Former competitive powerlifter with 10 years coaching experience.', credentials: JSON.stringify(['NSCA-CSCS', 'USA Weightlifting Level 2', 'B.S. Kinesiology']) },
     { id: 'mt2', user_id: 'u6', specialty: 'Hypertrophy & Mobility', bio: 'Expert in muscle isolation and joint longevity. Dedicated to injury prevention.', credentials: JSON.stringify(['ACSM Certified Physiologist', 'FMS Level 2', 'Precision Nutrition L1']) },
     { id: 'mt3', user_id: 'u7', specialty: 'Endurance & Biomechanics', bio: 'Triathlete and biomechanics researcher. Focuses on gait analysis and VO2 max training.', credentials: JSON.stringify(['Ph.D. Biomechanics', 'Ironman Certified Coach', 'NASM-PES']) },
+  ],
   diet_plans: [
     { id: 'dp1', member_id: 'm1', meals: JSON.stringify([{ time: '8:00 AM', meal: 'Oatmeal & 4 Eggs' }, { time: '1:00 PM', meal: 'Chicken Breast & Rice' }]), calories: 2500, notes: 'High protein focus.', updated_at: '2026-09-10' },
   ],
